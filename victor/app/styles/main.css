@@ -1,0 +1,13 @@
+.describe{
+    text-align: center;
+}
+.list {
+    margin-bottom: 30px;
+}
+
+.color {
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+    margin-bottom: 20px;
+}

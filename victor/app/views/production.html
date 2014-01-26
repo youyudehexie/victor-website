@@ -1,0 +1,41 @@
+<div ng-include="'views/navbar.html'"></div>
+<div class="row">
+
+    <div class="col-md-6">
+        <a href="#" class="thumbnail">
+            <img src="{{preview}}" alt="Generic placeholder thumbnail">
+        </a>
+    </div>
+
+    <div class="col-md-6">
+        <h1>标题:{{p.title}}</h1>
+        <h2>品牌:{{p.brand}}</h2>
+        <p>描述:{{p.describe}}</p>
+        <p>价钱:{{p.price}}</p>
+        <div class="swap">
+            <div ng-repeat="color in p.colors">
+                <a href="" ng-click="changePreview(color.alt)"><img src="{{color.src}}" class="color"></img></a>
+            </div>
+        </div>
+<form role="form">
+    <div class="form-group">
+        <select class="form-control">
+            <option ng-repeat="size in p.sizes">{{size}}</option>
+        </select>
+
+    </div>
+    <div class="form-group">
+
+        <select class="form-control">
+
+            <label for="disabledSelect">Qtiy</label>
+            <option ng-repeat="qtiy in p.qties">{{qtiy}}</option>
+        </select>
+    </div>
+</form>
+
+        <!--<select ng-model="p.size" ng-options="for c in p.szie">-->
+          <!--<option value="">-- choose color --</option>-->
+        <!--</select>-->
+    </div>
+</div>

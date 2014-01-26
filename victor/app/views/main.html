@@ -1,0 +1,27 @@
+<div ng-include="'views/navbar.html'"></div>
+<div class="row list" ng-repeat="row in rows">
+    <div class="col-xs-6 col-md-3" ng-repeat="item in row">
+        <a href="#sale/bras/?productId={{item.productId}}&type={{item.type}}" class="thumbnail">
+            <img src="{{item.picture.src}}"  alt="Generic placeholder thumbnail">
+        </a>
+        <div class="describe">
+            <p>{{item.price}}</p>
+        </div>
+    </div>
+    <!--<div class="col-xs-6 col-md-3">-->
+        <!--<a href="#" class="thumbnail">-->
+        <!--<img src="http://dm.victoriassecret.com/product/404x539/V385481_CROP1.jpg" alt="Generic placeholder thumbnail">-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-md-3">-->
+        <!--<a href="#" class="thumbnail">-->
+        <!--<img src="http://dm.victoriassecret.com/product/404x539/V385481_CROP1.jpg" alt="Generic placeholder thumbnail">-->
+        <!--</a>-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-md-3">-->
+        <!--<a href="#" class="thumbnail">-->
+        <!--<img src="http://dm.victoriassecret.com/product/404x539/V385481_CROP1.jpg" alt="Generic placeholder thumbnail">-->
+        <!--</a>-->
+    <!--</div>-->
+</div>
+
